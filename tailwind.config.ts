@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        rice: {
+          50: '#f5f0e1',
+          100: '#e6dcc3',
+          200: '#d7c8a5',
+          300: '#c8b487',
+          400: '#b9a069',
+          500: '#a08c4b',
+          600: '#8c7851',
+          700: '#6a5f3e',
+          800: '#48412a',
+          900: '#262316',
+        },
+        leaf: {
+          50: '#eaf2e8',
+          100: '#d5e5d1',
+          200: '#b0cbac',
+          300: '#8bb286',
+          400: '#669861',
+          500: '#4a7e3d',
+          600: '#3c6431',
+          700: '#2d4b25',
+          800: '#1e3219',
+          900: '#0f190c',
+        },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -89,7 +114,11 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+			},
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+      },
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
